@@ -1,0 +1,72 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroControlsComponent"
+      }
+    ],
+    "6": "hero_controls_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.ngfactory.dart",
+        "4": "i0"
+      },
+      {
+        "1": "hero.ngfactory.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "HeroControlsComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "hero-controls",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeroControlsComponent",
+        "moduleUrl": "asset:component_styles/lib/hero_controls_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "hero": "hero"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "      <style>\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      </style>\n      <h3>Controls</h3>\n      <button (click)=\"activate()\">Activate</button>",
+        "templateUrl": "asset:component_styles/lib/hero_controls_component.dart",
+        "styles": [
+          "\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      "
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
