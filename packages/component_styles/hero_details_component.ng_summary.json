@@ -42,9 +42,12 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "hero": "hero"
+      },
+      "inputTypes": {
+        "hero": " Hero"
       },
       "outputs": {},
       "hostListeners": {},
