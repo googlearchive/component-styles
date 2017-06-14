@@ -39,29 +39,7 @@
         ]
       }
     ],
-    "6": "hero_app_main_component.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      },
-      {
-        "1": "hero.template.dart",
-        "4": "i1"
-      },
-      {
-        "1": "hero_details_component.template.dart",
-        "4": "i2"
-      },
-      {
-        "1": "hero_controls_component.template.dart",
-        "4": "i3"
-      },
-      {
-        "1": "quest_summary_component.template.dart",
-        "4": "i4"
-      }
-    ]
+    "6": "hero_app_main_component.dart"
   },
   "type": {
     "HeroAppMainComponent": {
@@ -72,7 +50,7 @@
       "type": {
         "class": "Type",
         "name": "HeroAppMainComponent",
-        "moduleUrl": "asset:component_styles/lib/hero_app_main_component.dart",
+        "moduleUrl": "asset:component_styles/lib/src/hero_app_main_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -93,7 +71,7 @@
       "template": {
         "encapsulation": 2,
         "template": "      <quest-summary></quest-summary>\n      <hero-details [hero]=\"hero\" [class.active]=\"hero.active\">\n        <hero-controls [hero]=\"hero\"></hero-controls>\n      </hero-details>",
-        "templateUrl": "asset:component_styles/lib/hero_app_main_component.dart",
+        "templateUrl": "asset:component_styles/lib/src/hero_app_main_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

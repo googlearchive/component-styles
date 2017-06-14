@@ -7,78 +7,74 @@
         "5": false
       },
       {
-        "1": "hero.dart",
+        "1": "src/hero.dart",
         "5": false
       },
       {
-        "1": "hero_team_component.dart",
+        "1": "src/hero_app_main_component.dart",
         "5": false
       }
     ],
     "5": [
       {
-        "1": "HeroDetailsComponent",
+        "1": "AppComponent",
         "7": [
           {
-            "2": "HeroTeamComponent"
+            "2": "HeroAppMainComponent"
           }
         ]
       }
     ],
-    "6": "hero_details_component.dart",
+    "6": "app_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "src/hero.template.dart",
         "4": "i1"
       },
       {
-        "1": "hero_team_component.template.dart",
+        "1": "src/hero_app_main_component.template.dart",
         "4": "i2"
       }
     ]
   },
   "type": {
-    "HeroDetailsComponent": {
+    "AppComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-details",
+      "selector": "hero-app",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroDetailsComponent",
-        "moduleUrl": "asset:component_styles/lib/hero_details_component.dart",
+        "name": "AppComponent",
+        "moduleUrl": "asset:component_styles/lib/app_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
         "diDeps": []
       },
       "changeDetection": 6,
-      "inputs": {
-        "hero": "hero"
-      },
-      "inputTypes": {
-        "hero": " Hero"
-      },
+      "inputs": {},
+      "inputTypes": {},
       "outputs": {},
       "hostListeners": {},
-      "hostProperties": {},
+      "hostProperties": {
+        "class": "themeClass"
+      },
       "hostAttributes": {},
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "      <h2>{{hero.name}}</h2>\n      <hero-team [hero]=hero></hero-team>\n      <ng-content></ng-content>",
-        "templateUrl": "asset:component_styles/lib/hero_details_component.dart",
-        "styles": [],
-        "styleUrls": [
-          "asset:component_styles/lib/hero_details_component.css"
+        "template": "      <h1>Tour of Heroes</h1>\n      <hero-app-main [hero]=\"hero\"></hero-app-main>",
+        "templateUrl": "asset:component_styles/lib/app_component.dart",
+        "styles": [
+          "h1 { font-weight: normal; }"
         ],
-        "ngContentSelectors": [
-          "*"
-        ]
+        "styleUrls": [],
+        "ngContentSelectors": []
       },
       "providers": [],
       "viewProviders": [],

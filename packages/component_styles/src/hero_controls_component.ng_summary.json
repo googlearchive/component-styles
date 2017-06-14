@@ -13,36 +13,21 @@
     ],
     "5": [
       {
-        "1": "HeroTeamComponent",
-        "7": [
-          {
-            "2": "CORE_DIRECTIVES"
-          }
-        ]
+        "1": "HeroControlsComponent"
       }
     ],
-    "6": "hero_team_component.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      },
-      {
-        "1": "hero.template.dart",
-        "4": "i1"
-      }
-    ]
+    "6": "hero_controls_component.dart"
   },
   "type": {
-    "HeroTeamComponent": {
+    "HeroControlsComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-team",
+      "selector": "hero-controls",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroTeamComponent",
-        "moduleUrl": "asset:component_styles/lib/hero_team_component.dart",
+        "name": "HeroControlsComponent",
+        "moduleUrl": "asset:component_styles/lib/src/hero_controls_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -62,12 +47,12 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "      <link rel=\"stylesheet\" href=\"hero_team_component.css\">\n      <h3>Team</h3>\n      <ul>\n        <li *ngFor=\"let member of hero.team\">\n          {{member}}\n        </li>\n      </ul>",
-        "templateUrl": "asset:component_styles/lib/hero_team_component.dart",
-        "styles": [],
-        "styleUrls": [
-          "asset:component_styles/lib/hero_team_component.css"
+        "template": "      <style>\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      </style>\n      <h3>Controls</h3>\n      <button (click)=\"activate()\">Activate</button>",
+        "templateUrl": "asset:component_styles/lib/src/hero_controls_component.dart",
+        "styles": [
+          "\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      "
         ],
+        "styleUrls": [],
         "ngContentSelectors": []
       },
       "providers": [],

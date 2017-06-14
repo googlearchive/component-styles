@@ -4,7 +4,7 @@
     "Hero": {
       "class": "Identifier",
       "name": "Hero",
-      "moduleUrl": "asset:component_styles/lib/hero.dart",
+      "moduleUrl": "asset:component_styles/lib/src/hero.dart",
       "prefix": null,
       "value": null
     }

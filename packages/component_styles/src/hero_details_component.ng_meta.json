@@ -9,14 +9,23 @@
       {
         "1": "hero.dart",
         "5": false
+      },
+      {
+        "1": "hero_team_component.dart",
+        "5": false
       }
     ],
     "5": [
       {
-        "1": "HeroControlsComponent"
+        "1": "HeroDetailsComponent",
+        "7": [
+          {
+            "2": "HeroTeamComponent"
+          }
+        ]
       }
     ],
-    "6": "hero_controls_component.dart",
+    "6": "hero_details_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
@@ -25,19 +34,23 @@
       {
         "1": "hero.template.dart",
         "4": "i1"
+      },
+      {
+        "1": "hero_team_component.template.dart",
+        "4": "i2"
       }
     ]
   },
   "type": {
-    "HeroControlsComponent": {
+    "HeroDetailsComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-controls",
+      "selector": "hero-details",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroControlsComponent",
-        "moduleUrl": "asset:component_styles/lib/hero_controls_component.dart",
+        "name": "HeroDetailsComponent",
+        "moduleUrl": "asset:component_styles/lib/src/hero_details_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -57,13 +70,15 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "      <style>\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      </style>\n      <h3>Controls</h3>\n      <button (click)=\"activate()\">Activate</button>",
-        "templateUrl": "asset:component_styles/lib/hero_controls_component.dart",
-        "styles": [
-          "\n        button {\n          background-color: white;\n          border: 1px solid #777;\n        }\n      "
+        "template": "      <h2>{{hero.name}}</h2>\n      <hero-team [hero]=hero></hero-team>\n      <ng-content></ng-content>",
+        "templateUrl": "asset:component_styles/lib/src/hero_details_component.dart",
+        "styles": [],
+        "styleUrls": [
+          "asset:component_styles/lib/src/hero_details_component.css"
         ],
-        "styleUrls": [],
-        "ngContentSelectors": []
+        "ngContentSelectors": [
+          "*"
+        ]
       },
       "providers": [],
       "viewProviders": [],

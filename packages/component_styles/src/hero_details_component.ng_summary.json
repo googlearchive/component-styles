@@ -36,7 +36,7 @@
       "type": {
         "class": "Type",
         "name": "HeroDetailsComponent",
-        "moduleUrl": "asset:component_styles/lib/hero_details_component.dart",
+        "moduleUrl": "asset:component_styles/lib/src/hero_details_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -57,10 +57,10 @@
       "template": {
         "encapsulation": 0,
         "template": "      <h2>{{hero.name}}</h2>\n      <hero-team [hero]=hero></hero-team>\n      <ng-content></ng-content>",
-        "templateUrl": "asset:component_styles/lib/hero_details_component.dart",
+        "templateUrl": "asset:component_styles/lib/src/hero_details_component.dart",
         "styles": [],
         "styleUrls": [
-          "asset:component_styles/lib/hero_details_component.css"
+          "asset:component_styles/lib/src/hero_details_component.css"
         ],
         "ngContentSelectors": [
           "*"

@@ -5,39 +5,56 @@
       {
         "1": "package:angular2/angular2.dart",
         "5": false
+      },
+      {
+        "1": "hero.dart",
+        "5": false
       }
     ],
     "5": [
       {
-        "1": "QuestSummaryComponent"
+        "1": "HeroTeamComponent",
+        "7": [
+          {
+            "2": "CORE_DIRECTIVES"
+          }
+        ]
       }
     ],
-    "6": "quest_summary_component.dart",
+    "6": "hero_team_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
         "4": "i0"
+      },
+      {
+        "1": "hero.template.dart",
+        "4": "i1"
       }
     ]
   },
   "type": {
-    "QuestSummaryComponent": {
+    "HeroTeamComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "quest-summary",
+      "selector": "hero-team",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "QuestSummaryComponent",
-        "moduleUrl": "asset:component_styles/lib/quest_summary_component.dart",
+        "name": "HeroTeamComponent",
+        "moduleUrl": "asset:component_styles/lib/src/hero_team_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
         "diDeps": []
       },
       "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
+      "inputs": {
+        "hero": "hero"
+      },
+      "inputTypes": {
+        "hero": " Hero"
+      },
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
@@ -45,11 +62,11 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<p>No quests in progress</p>\n",
-        "templateUrl": "asset:component_styles/lib/quest_summary_component.html",
+        "template": "      <link rel=\"stylesheet\" href=\"hero_team_component.css\">\n      <h3>Team</h3>\n      <ul>\n        <li *ngFor=\"let member of hero.team\">\n          {{member}}\n        </li>\n      </ul>",
+        "templateUrl": "asset:component_styles/lib/src/hero_team_component.dart",
         "styles": [],
         "styleUrls": [
-          "asset:component_styles/lib/quest_summary_component.css"
+          "asset:component_styles/lib/src/hero_team_component.css"
         ],
         "ngContentSelectors": []
       },

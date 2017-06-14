@@ -23,7 +23,7 @@
       "type": {
         "class": "Type",
         "name": "QuestSummaryComponent",
-        "moduleUrl": "asset:component_styles/lib/quest_summary_component.dart",
+        "moduleUrl": "asset:component_styles/lib/src/quest_summary_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -40,10 +40,10 @@
       "template": {
         "encapsulation": 0,
         "template": "<p>No quests in progress</p>\n",
-        "templateUrl": "asset:component_styles/lib/quest_summary_component.html",
+        "templateUrl": "asset:component_styles/lib/src/quest_summary_component.html",
         "styles": [],
         "styleUrls": [
-          "asset:component_styles/lib/quest_summary_component.css"
+          "asset:component_styles/lib/src/quest_summary_component.css"
         ],
         "ngContentSelectors": []
       },
