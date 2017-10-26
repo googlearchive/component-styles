@@ -1,0 +1,22 @@
+@import 'hero_details_box.css';
+
+:host {
+  display: block;
+  border: 1px solid black;
+}
+
+/* #docregion host-function */
+:host(.active) {
+  border-width: 3px;
+}
+/* #enddocregion host-function */
+
+/* #docregion host-context */
+:host-context(.theme-light) h2 {
+  background-color: #eef;
+}
+/* #enddocregion host-context */
+
+:host ::ng-deep h3 {
+  font-style: italic;
+}
