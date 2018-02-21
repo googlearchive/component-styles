@@ -12,14 +12,12 @@ import 'hero.dart';
 import 'hero_details_component.dart';
 import 'hero_controls_component.dart';
 import 'quest_summary_component.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'hero.template.dart' as _ref0;
 import 'hero_controls_component.template.dart' as _ref1;
 import 'hero_details_component.template.dart' as _ref2;
 import 'package:angular/angular.template.dart' as _ref3;
 import 'quest_summary_component.template.dart' as _ref4;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'hero_app_main_component.dart' as import1;
 import 'dart:html' as import2;
@@ -175,13 +173,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(HeroAppMainComponent, HeroAppMainComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
   _ref3.initReflector();
   _ref4.initReflector();
-  _ngRef.registerComponent(
-    HeroAppMainComponent,
-    HeroAppMainComponentNgFactory,
-  );
 }
