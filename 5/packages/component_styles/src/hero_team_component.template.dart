@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -32,7 +30,7 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
   import3.Element _el_0;
   import3.UListElement _el_2;
   ViewContainer _appEl_3;
-  import5.NgFor _NgFor_3_7;
+  import5.NgFor _NgFor_3_9;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewHeroTeamComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -53,8 +51,8 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
     var _anchor_3 = ngAnchor.clone(false);
     _el_2.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 2, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_HeroTeamComponent1);
-    _NgFor_3_7 = new import5.NgFor(_appEl_3, _TemplateRef_3_6);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_HeroTeamComponent1);
+    _NgFor_3_9 = new import5.NgFor(_appEl_3, _TemplateRef_3_8);
     init(const [], null);
     return null;
   }
@@ -64,10 +62,10 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
     final import2.HeroTeamComponent _ctx = ctx;
     final currVal_0 = _ctx.hero.team;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_3_7.ngForOf = currVal_0;
+      _NgFor_3_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_3_7.ngDoCheck();
+    _NgFor_3_9.ngDoCheck();
     _appEl_3.detectChangesInNestedViews();
   }
 
@@ -118,24 +116,16 @@ const List<dynamic> styles$HeroTeamComponentHost = const [];
 
 class _ViewHeroTeamComponentHost0 extends AppView<dynamic> {
   ViewHeroTeamComponent0 _compView_0;
-  import2.HeroTeamComponent _HeroTeamComponent_0_4;
+  import2.HeroTeamComponent _HeroTeamComponent_0_5;
   _ViewHeroTeamComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroTeamComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HeroTeamComponent_0_4 = new import2.HeroTeamComponent();
-    _compView_0.create(_HeroTeamComponent_0_4, projectableNodes);
+    _HeroTeamComponent_0_5 = new import2.HeroTeamComponent();
+    _compView_0.create(_HeroTeamComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.HeroTeamComponent>(0, this, rootEl, _HeroTeamComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import2.HeroTeamComponent) && (0 == nodeIndex))) {
-      return _HeroTeamComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import2.HeroTeamComponent>(0, this, rootEl, _HeroTeamComponent_0_5);
   }
 
   @override
