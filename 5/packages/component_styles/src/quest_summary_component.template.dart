@@ -23,14 +23,15 @@ const List<dynamic> styles$QuestSummaryComponent = const [import0.styles];
 class ViewQuestSummaryComponent0 extends AppView<import2.QuestSummaryComponent> {
   import3.Element _el_0;
   static RenderComponentType _renderType;
-  ViewQuestSummaryComponent0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewQuestSummaryComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('quest-summary');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$QuestSummaryComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.QuestSummaryComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_0);
@@ -41,7 +42,7 @@ class ViewQuestSummaryComponent0 extends AppView<import2.QuestSummaryComponent> 
   }
 }
 
-AppView<import2.QuestSummaryComponent> viewFactory_QuestSummaryComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.QuestSummaryComponent> viewFactory_QuestSummaryComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewQuestSummaryComponent0(parentView, parentIndex);
 }
 
@@ -50,7 +51,7 @@ const List<dynamic> styles$QuestSummaryComponentHost = const [];
 class _ViewQuestSummaryComponentHost0 extends AppView<dynamic> {
   ViewQuestSummaryComponent0 _compView_0;
   import2.QuestSummaryComponent _QuestSummaryComponent_0_5;
-  _ViewQuestSummaryComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewQuestSummaryComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewQuestSummaryComponent0(this, 0);
@@ -72,7 +73,7 @@ class _ViewQuestSummaryComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_QuestSummaryComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_QuestSummaryComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewQuestSummaryComponentHost0(parentView, parentIndex);
 }
 

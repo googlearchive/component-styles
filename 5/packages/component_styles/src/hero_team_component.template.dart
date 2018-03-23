@@ -33,14 +33,15 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
   import5.NgFor _NgFor_3_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHeroTeamComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroTeamComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('hero-team');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroTeamComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import2.HeroTeamComponent> build() {
-    final import3.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import3.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import3.document;
     _el_0 = createAndAppend(doc, 'h3', parentRenderNode);
     addShimE(_el_0);
@@ -75,7 +76,7 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
   }
 }
 
-AppView<import2.HeroTeamComponent> viewFactory_HeroTeamComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HeroTeamComponent> viewFactory_HeroTeamComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHeroTeamComponent0(parentView, parentIndex);
 }
 
@@ -83,7 +84,7 @@ class _ViewHeroTeamComponent1 extends AppView<import2.HeroTeamComponent> {
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewHeroTeamComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHeroTeamComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHeroTeamComponent0._renderType;
   }
   @override
@@ -108,7 +109,7 @@ class _ViewHeroTeamComponent1 extends AppView<import2.HeroTeamComponent> {
   }
 }
 
-AppView<import2.HeroTeamComponent> viewFactory_HeroTeamComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import2.HeroTeamComponent> viewFactory_HeroTeamComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroTeamComponent1(parentView, parentIndex);
 }
 
@@ -117,7 +118,7 @@ const List<dynamic> styles$HeroTeamComponentHost = const [];
 class _ViewHeroTeamComponentHost0 extends AppView<dynamic> {
   ViewHeroTeamComponent0 _compView_0;
   import2.HeroTeamComponent _HeroTeamComponent_0_5;
-  _ViewHeroTeamComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroTeamComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroTeamComponent0(this, 0);
@@ -139,7 +140,7 @@ class _ViewHeroTeamComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HeroTeamComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HeroTeamComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroTeamComponentHost0(parentView, parentIndex);
 }
 

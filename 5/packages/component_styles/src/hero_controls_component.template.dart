@@ -25,14 +25,15 @@ class ViewHeroControlsComponent0 extends AppView<import1.HeroControlsComponent> 
   import2.Element _el_0;
   import2.ButtonElement _el_2;
   static RenderComponentType _renderType;
-  ViewHeroControlsComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroControlsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-controls');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroControlsComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.HeroControlsComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'h3', parentRenderNode);
     addShimE(_el_0);
@@ -48,7 +49,7 @@ class ViewHeroControlsComponent0 extends AppView<import1.HeroControlsComponent> 
   }
 }
 
-AppView<import1.HeroControlsComponent> viewFactory_HeroControlsComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.HeroControlsComponent> viewFactory_HeroControlsComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewHeroControlsComponent0(parentView, parentIndex);
 }
 
@@ -57,7 +58,7 @@ const List<dynamic> styles$HeroControlsComponentHost = const [];
 class _ViewHeroControlsComponentHost0 extends AppView<dynamic> {
   ViewHeroControlsComponent0 _compView_0;
   import1.HeroControlsComponent _HeroControlsComponent_0_5;
-  _ViewHeroControlsComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroControlsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroControlsComponent0(this, 0);
@@ -79,7 +80,7 @@ class _ViewHeroControlsComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_HeroControlsComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_HeroControlsComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewHeroControlsComponentHost0(parentView, parentIndex);
 }
 
