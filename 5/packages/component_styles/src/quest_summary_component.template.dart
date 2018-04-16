@@ -23,7 +23,7 @@ const List<dynamic> styles$QuestSummaryComponent = const [import0.styles];
 class ViewQuestSummaryComponent0 extends AppView<import2.QuestSummaryComponent> {
   import3.Element _el_0;
   static RenderComponentType _renderType;
-  ViewQuestSummaryComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewQuestSummaryComponent0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('quest-summary');
     _renderType ??= import7.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$QuestSummaryComponent);
     setupComponentType(_renderType);
@@ -51,7 +51,7 @@ const List<dynamic> styles$QuestSummaryComponentHost = const [];
 class _ViewQuestSummaryComponentHost0 extends AppView<dynamic> {
   ViewQuestSummaryComponent0 _compView_0;
   import2.QuestSummaryComponent _QuestSummaryComponent_0_5;
-  _ViewQuestSummaryComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewQuestSummaryComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import5.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewQuestSummaryComponent0(this, 0);

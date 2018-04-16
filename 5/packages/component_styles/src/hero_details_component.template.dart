@@ -35,7 +35,7 @@ class ViewHeroDetailsComponent0 extends AppView<import2.HeroDetailsComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewHeroDetailsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroDetailsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('hero-details');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroDetailsComponent);
     setupComponentType(_renderType);
@@ -91,7 +91,7 @@ const List<dynamic> styles$HeroDetailsComponentHost = const [];
 class _ViewHeroDetailsComponentHost0 extends AppView<dynamic> {
   ViewHeroDetailsComponent0 _compView_0;
   import2.HeroDetailsComponent _HeroDetailsComponent_0_5;
-  _ViewHeroDetailsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroDetailsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroDetailsComponent0(this, 0);

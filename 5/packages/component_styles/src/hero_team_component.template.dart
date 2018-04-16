@@ -33,7 +33,7 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
   import5.NgFor _NgFor_3_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewHeroTeamComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroTeamComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import3.document.createElement('hero-team');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroTeamComponent);
     setupComponentType(_renderType);
@@ -49,7 +49,7 @@ class ViewHeroTeamComponent0 extends AppView<import2.HeroTeamComponent> {
     _el_0.append(_text_1);
     _el_2 = createAndAppend(doc, 'ul', parentRenderNode);
     addShimC(_el_2);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_2.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 2, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_HeroTeamComponent1);
@@ -84,7 +84,7 @@ class _ViewHeroTeamComponent1 extends AppView<import2.HeroTeamComponent> {
   import3.Element _el_0;
   import3.Text _text_1;
   var _expr_0;
-  _ViewHeroTeamComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewHeroTeamComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewHeroTeamComponent0._renderType;
   }
   @override
@@ -118,7 +118,7 @@ const List<dynamic> styles$HeroTeamComponentHost = const [];
 class _ViewHeroTeamComponentHost0 extends AppView<dynamic> {
   ViewHeroTeamComponent0 _compView_0;
   import2.HeroTeamComponent _HeroTeamComponent_0_5;
-  _ViewHeroTeamComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroTeamComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroTeamComponent0(this, 0);

@@ -25,7 +25,7 @@ class ViewHeroControlsComponent0 extends AppView<import1.HeroControlsComponent> 
   import2.Element _el_0;
   import2.ButtonElement _el_2;
   static RenderComponentType _renderType;
-  ViewHeroControlsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewHeroControlsComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('hero-controls');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$HeroControlsComponent);
     setupComponentType(_renderType);
@@ -58,7 +58,7 @@ const List<dynamic> styles$HeroControlsComponentHost = const [];
 class _ViewHeroControlsComponentHost0 extends AppView<dynamic> {
   ViewHeroControlsComponent0 _compView_0;
   import1.HeroControlsComponent _HeroControlsComponent_0_5;
-  _ViewHeroControlsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewHeroControlsComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewHeroControlsComponent0(this, 0);
